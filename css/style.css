@@ -1,3 +1,32 @@
 body{
-    background-color: lightcoral;
+    background-color: #F0E6FF;
+    font-family: Arial, sans-serif;
+    margin: 40px;
 }
+
+h1{
+    text-align: center;
+    font-size: 40px;
+    color:#222222;
+}
+h2{
+    color:#6A4C93;
+}
+
+a{
+    color:#6A4C93;
+    text-decoration: none;
+     
+}
+
+ul{
+    list-style: none;
+    padding:0;
+}
+
+li{
+    margin-bottom: 10px;
+    padding:5px;
+    border: 1px solid #6A4C93
+}
+
