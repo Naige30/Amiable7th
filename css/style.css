@@ -1,7 +1,9 @@
 body{
     background-color: #F0E6FF;
     font-family: Arial, sans-serif;
-    margin: 40px;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding:40px;
 }
 
 h1{
@@ -26,12 +28,19 @@ ul{
     padding:0;
 }
 
+.character-list{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
 .character-list li{
+    width: 180px    ;
     margin-bottom: 10px;
     border: 1px solid #6A4C93;
     border-radius: 8px;
-    background-color: #E8D9FF;
-    padding:5px;
+    background-color: white;
+    padding:10px;
 }
 
 .character-section{
