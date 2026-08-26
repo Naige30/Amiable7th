@@ -17,17 +17,33 @@ a{
     color:#6A4C93;
     text-decoration: none;
     display:block;
-    padding: 5px;
+    
      
 }
 
 ul{
-    list-style: none;
+    list-style:none; 
     padding:0;
 }
 
-li{
+.character-list li{
     margin-bottom: 10px;
-    border: 1px solid #6A4C93
+    border: 1px solid #6A4C93;
+    border-radius: 8px;
+    background-color: #E8D9FF;
+    padding:5px;
+}
+
+.character-section{
+    background-color: #E8D9FF;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.character-section h3{
+    color:#6A4C93;
+    font-size: 24px;
+
 }
 
