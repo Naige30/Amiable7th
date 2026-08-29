@@ -175,3 +175,9 @@ ul {
 }
 
 }
+
+/*info-label*/
+.info-label{
+    display: inline-block;
+    width: 70px;
+}
