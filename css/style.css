@@ -98,6 +98,13 @@ ul {
     margin: 0 auto;
 }
 
+.character-header h1{
+    color:#6A4C93;
+    font-size: 36px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
 /* char page*/
 .chararacter-page .character-section {
     background-color: white;
@@ -113,8 +120,12 @@ ul {
 
 .character-content .info-box {
     flex: 1;
+    min-height: 360px;
 }
 
+.character-content .character-image{
+    border: 1px solid #6A4C93;
+}
 /*info box*/
 
 .info-box {
@@ -150,4 +161,17 @@ ul {
 .relationship-list a{
     display: inline;
     text-align: left;
+}
+
+/*700pixels*/
+
+@media (max-width:700px){
+.character-content{
+    flex-direction: column;
+    align-items: center;
+}
+.character-content .info-box{
+    width: 100%;
+}
+
 }
