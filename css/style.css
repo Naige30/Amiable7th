@@ -106,7 +106,7 @@ ul {
 }
 
 /* char page*/
-.chararacter-page .character-section {
+.character-page .character-section {
     background-color: white;
     border: 1px solid #6A4C93;
 }
@@ -180,4 +180,40 @@ ul {
 .info-label{
     display: inline-block;
     width: 70px;
+}
+
+/*header*/
+header{
+    background-color: white;
+    border: 1px solid #6A4C93 ;
+    border-radius: 10px;
+    padding: 15px 25px;
+    margin-bottom: 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.site-title a{
+    color:#6A4C93;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+    gap: 20px;
+}
+
+nav a{
+    color:#6A4C93;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+nav a:hover{
+    text-decoration: underline;
 }
