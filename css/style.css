@@ -217,3 +217,22 @@ nav a{
 nav a:hover{
     text-decoration: underline;
 }
+
+/*welcome-section*/
+.welcome-section{
+    background-color: white;
+    border: 1px solid #6A4C93;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.welcome-section h1{
+    margin-top: 0;
+    margin-bottom: 15px;
+
+}
+
+.welcome-section p{
+    margin: 8px 0;
+}
