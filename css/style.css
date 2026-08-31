@@ -43,10 +43,18 @@ ul {
     width: 180px;
     height: 280px;
     border: 1px solid #6A4C93;
-    border-radius: 8px;
+    border-radius: 10px;
     background-color: white;
     padding: 10px;
     box-sizing: border-box;
+
+    transition: transform 0.2s, box-shadow 0.2s;
+
+}
+
+.character-list li:hover{
+    transform:translateY(-5px);
+    box-shadow: 0 5px 12px rgba(106,76,147,0.25);
 
 }
 
@@ -67,6 +75,7 @@ ul {
 /*char img*/
 .character-image {
     height: 230px;
+    overflow:hidden;
     background-color: #F0E6FF;
     margin-bottom: 10px;
     display: flex;
@@ -126,6 +135,18 @@ ul {
 .character-content .character-image{
     border: 1px solid #6A4C93;
 }
+
+/*character card*/
+.character-card{
+    display:block;
+    text-align: center;
+    height: 100%;
+}
+.character-card span{
+    display: block;
+    margin-top: 5px;
+}
+
 /*info box*/
 
 .info-box {
