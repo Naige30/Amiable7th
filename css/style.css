@@ -383,3 +383,85 @@ nav a:hover{
     background-color: #6A4C93;
     color: white;
 }
+
+.search-input{
+    border:1px solid #6A4C93;
+    border-radius: 8px;
+    padding: 8px 14px;
+    font-size: 14px;
+    width: 200px;
+}
+
+/* class grid */
+
+.class-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.class-card{
+    background-color: white;
+    border: 1px solid #6A4C93;
+    border-radius: 10px;
+    padding:15px;
+}
+
+.class-card h4{
+    color:#6A4C93;
+    margin-top: 0;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #E8D9FF;
+    padding-bottom: 8px;
+
+}
+
+.chip-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap:6px;
+}
+
+.chip{
+    background-color: #E8D9FF;
+    color:#6A4C93;
+    border-radius: 20px;
+    padding:4px 12px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* about me timeline*/
+
+.timeline{
+    list-style: none;
+    padding-left: 25px;
+    position: relative;
+}
+
+.timeline::before{
+content: "";
+position: absolute;
+left: 5px;
+top: 6px;
+bottom: 6px;
+width: 2px;
+background-color: #E8D9FF;
+}
+
+.timeline li{
+    position: relative;
+    margin-bottom: 18px;
+    line-height: 1.5;
+}
+
+.timeline-dot{
+    position: absolute;
+    left: -25px;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    background-color: #6A4C93;
+    border-radius: 50%;
+}
