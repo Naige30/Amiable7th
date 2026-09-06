@@ -1,102 +1,124 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>The Author</title>
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Cinzel:wght@500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        corePlugins: {
+          preflight: false,
+        },
+        theme: {
+          extend: {
+            fontFamily: {
+              title: ['Parisienne', 'cursive'],
+              accent: ['Cinzel', 'serif'],
+            },
+            colors: {
+              'purple-deep': '#3E2B5C',
+              'purple-main': '#6A4C93',
+              'purple-light': '#B79FDB',
+            },
+          }
+        }
+      }
+    </script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
+    <div class="bg-blobs">
+        <span class="blob-1"></span>
+        <span class="blob-2"></span>
+        <span class="blob-3"></span>
+    </div>
+
+    <header class="bg-gradient-to-br from-purple-deep via-purple-main to-purple-light border-none">
         <div class="site-title">
-           <a href="index.html"> Amiable 7th</a>
+           <a href="index.html" class="font-title text-3xl text-white">Amiable 7th</a>
         </div>
 
         <nav>
-            <a href="index.html">Home</a>
-            <a href="index.html#characters">Characters</a>
-            <a href="preorder.html">Pre-order</a>
-            <a href="about.html">About Naige</a>
+            <a href="index.html" class="text-white font-bold">Home</a>
+            <a href="index.html#characters" class="text-white font-bold">Characters</a>
+            <a href="preorder.html" class="text-white font-bold">Pre-order</a>
+            <a href="about.html" class="text-white font-bold">About Naige</a>
         </nav>
     </header>
 
-    <div class="welcome-section">
-        <h1>Naige</h1>
-        <p>Learn more about the author of <em>Amiable 7th</em></p>
+    <div class="welcome-section bg-gradient-to-br from-purple-deep via-purple-main to-purple-light border-none">
+        <h1 class="font-title text-5xl text-white">Naige</h1>
+        <p class="text-purple-light">Learn more about the author of <em>Amiable 7th</em></p>
     </div>
 
     <div class="author-section">
-
         <div class="author-image">
-    <img src="images/naige.jpg">
-         </div>
-     
-         <div class="author-info">
-            <h2>Naige</h2>
-            <h3>Author of Amiable 7th</h3>
+            <img src="images/naige.jpg">
+        </div>
 
-            <p>Gian Rizen A. Lacao, also known by his pen name Naige, is a third-year Bachelor of Science in Information Technology (BSIT) student at the Polytechnic University of the Philippines–Biñan Campus.
+        <div class="author-info">
+            <h2 class="font-accent">Naige</h2>
+            <h3 class="font-accent">Author of Amiable 7th</h3>
+            <p>Gian Rizen A. Lacao, also known by his pen name Naige, is a third-year Bachelor of Science in Information Technology (BSIT) student at the Polytechnic University of the Philippines–Biñan Campus. He was born on April 30, 2006, in Muntinlupa City, and grew up in San Pedro, Laguna.</p>
+        </div>
+    </div>
 
-He was born on April 30, 2006, in Muntinlupa City. Although he was born in Muntinlupa City, he grew up in San Pedro, Laguna.
+    <div class="stats-strip">
+        <div class="stat-box">
+            <span class="stat-number">3×</span>
+            <span class="stat-label">Honors Graduate</span>
+        </div>
+        <div class="stat-box">
+            <span class="stat-number">2006</span>
+            <span class="stat-label">Born in Muntinlupa City</span>
+        </div>
+        <div class="stat-box">
+            <span class="stat-number">3rd</span>
+            <span class="stat-label">Year BSIT Student</span>
+        </div>
+    </div>
 
-During his preschool years, he graduated as Valedictorian from Evangelical Church San Pedro, Laguna. He then transferred to San Lorenzo School to continue his elementary education, where he graduated among the top 10 students of his batch. He continued his high school education at San Lorenzo School until Grade 10, graduating with honors.
+    <div class="character-section">
+        <h2 class="font-accent">Education Timeline</h2>
+        <ul class="timeline">
+            <li>
+                <span class="timeline-dot"></span>
+                <strong>Preschool</strong> — Graduated as Valedictorian, Evangelical Church, San Pedro, Laguna
+            </li>
+            <li>
+                <span class="timeline-dot"></span>
+                <strong>Elementary</strong> — San Lorenzo School, graduated among the top 10 of his batch
+            </li>
+            <li>
+                <span class="timeline-dot"></span>
+                <strong>High School (Jr.)</strong> — San Lorenzo School, until Grade 10, graduated with honors
+            </li>
+            <li>
+                <span class="timeline-dot"></span>
+                <strong>Senior High School</strong> — Muntinlupa Science High School, graduated with honors
+            </li>
+            <li>
+                <span class="timeline-dot"></span>
+                <strong>College</strong> — Polytechnic University of the Philippines–Biñan Campus (BSIT), despite passing the De La Salle University entrance exam
+            </li>
+        </ul>
+    </div>
 
-For Senior High School, he transferred to Muntinlupa Science High School, where he also graduated with honors. He then pursued his college education at the Polytechnic University of the Philippines–Biñan Campus, despite passing the entrance examination for De La Salle University.
+    <div class="quote-block">
+        <p>"Amiable 7th started as boredom — it became a way to hold on to memories I didn't want to forget."</p>
+    </div>
 
+    <div class="character-section">
+        <h2 class="font-accent">About Amiable 7th</h2>
+        <p>
+            Amiable 7th was created out of Naige's boredom. During his free time, he developed an interest in reading and eventually began writing his own stories. He later came across the book series by Gwy Saludes, which inspired him to create a story of his own.
 
-            </p>
-         </div>
-         
+            The story is heavily inspired by Naige's experiences and memories from his high school days, incorporating elements of his life into the characters, events, and setting of Amiable 7th.
+        </p>
+    </div>
 
-</div>
-<div class="character-section">
-<h2>Education Timeline</h2>
-<ul class="timeline">
-<li>
-    <span class="timeline-dot"></span>
-    <strong>Preschool</strong>— Graduated as Valedictorian, Evangelical Church, San Pedro, Laguna
-</li>
-<li>
-    <span class="timeline-dot"></span>
-    <strong>Elementary</strong>- San Lorenzo School, graduated among the top 10 of his batch
-</li>
-<li>
-    <span class="timeline-dot"></span>
-    <strong>HighSchool (Jr.)</strong>-San Lorenzo School, until Grade 10, graduated with honors
-</li>
-<li>
-    <span class="timeline-dot"></span>
-    <strong>Senior High School</strong>-Muntinlupa Science High School, graduated with honors
-</li>
-<li>
-    <span class="timeline-dot"></span>
-    <strong>College</strong>-Polytechnic University of the Philippines–Biñan Campus (BSIT), despite passing the De La Salle University entrance exam
-</li>
-</ul>
-
-</div>
-
-<div class="stats-strip">
-  <div class="stat-box">
-    <span class="stat-number">3x</span>
-    <span class="stat-label">Honors Graduate</span>
-  </div>
-
-  <div class="stat-box">
-    <span class="stat-number">2006</span>
-    <span class="stat-label">Born in Muntinlupa City</span>
-  </div>
-
-  <div class="stat-box">
-    <span class="stat-number">3rd</span>
-    <span class="stat-label"> Year BSIT Student</span>
-  </div>
-
-  <div class="quote-box">
-    <p>"Amiable 7th started as boredom and it became a way to hold on to memories I didn't want to forget."</p>
-  </div>
-
-</div>
-
-<div class="social-section">
+   <div class="social-section">
     <h2>Find Naige</h2>
      <a href="https://www.instagram.com/gian_rizen/" target="_blank" aria-label="Instagram">
     <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
@@ -116,14 +138,5 @@ For Senior High School, he transferred to Muntinlupa Science High School, where 
 </a>
 </div>
 
-
-
-
-    </div>
 </body>
-
-
-
-
-
 </html>

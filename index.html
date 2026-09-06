@@ -16,6 +16,11 @@
           title: ['Parisienne', 'cursive'],
           accent: ['Cinzel', 'serif'],
         },
+        colors: {
+          'purple-deep': '#3E2B5C',
+          'purple-main': '#6A4C93',
+          'purple-light': '#B79FDB',
+        },
       }
     }
   }
@@ -24,26 +29,29 @@
 </head>
 
 <body>
-    <header>
+<div class="bg-blobs">
+    <span class="blob-1"></span>
+    <span class="blob-2"></span>
+    <span class="blob-3"></span>
+</div>
+    <header class="bg-gradient-to-br from-purple-deep via-purple-main to-purple-light border-none">
         <div class="site-title">
-            <a href="index.html" class="font-title text-3xl">Amiable 7th</a>
+           <a href="index.html" class="font-title text-3xl text-white font-bold">Amiable 7th</a>
 
         </div>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="#characters">Characters</a>
-            <a href="preorder.html">Pre-Order</a>
-            <a href="about.html">About Naige</a>
+<a href="index.html" class="text-white font-bold">Home</a>
+<a href="#characters" class="text-white font-bold">Characters</a>
+<a href="preorder.html" class="text-white font-bold">Pre-Order</a>
+<a href="about.html" class="text-white font-bold">About Naige</a>
         </nav>
     </header>
 
-    <div class="welcome-section">
-        <h1 class="font-title text-5xl">Welcome to Amiable 7th Wiki</h1>
-        <p>This website contains information about the characters,
-            locations, and events of <em>Amiable 7th</em>.</p>
-        <p>Explore the world of Amiable 7th and learn more about its characters
-            and story.</p>
-            <a href="preorder.html" class="preorder-btn">Pre-order the Book</a>
+    <div class="welcome-section bg-gradient-to-br from-purple-deep via-purple-main to-purple-light border-none">
+       <h1 class="font-title text-5xl text-white">Welcome to Amiable 7th Wiki</h1>
+<p class="text-purple-light">This website contains information about the characters, locations, and events of <em>Amiable 7th</em>.</p>
+<p class="text-purple-light">Explore the world of Amiable 7th and learn more about its characters and story.</p>
+            <a href="preorder.html" class="font-accent tracking-wide inline-block bg-gradient-to-br from-amber-400 to-amber-600 text-white font-bold px-7 py-3 rounded-lg hover:shadow-lg hover:-translate-y-1 transition">Pre-order the Book</a>
             
     </div>
 
@@ -68,13 +76,13 @@
 
     <div class="filter-bar">
         <input type="text" id="searchInput" class="search-input" placeholder="Search...">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="7-A">Class 7-A</button>
-        <button class="filter-btn" data-filter="7-B">Class 7-B</button>
-        <button class="filter-btn" data-filter="Class 6">Class 6</button>
-        <button class="filter-btn" data-filter="Class 4">Class 4</button>
-        <button class="filter-btn" data-filter="Faculty">Faculty</button>
-        <button class="filter-btn" data-filter="Helios Institute">Helios Institute</button>
+        <button class="filter-btn active font-accent tracking-wide transition hover:-translate-y-0.5" data-filter="all">All</button>
+<button class="filter-btn font-accent tracking-wide transition hover:-translate-y-0.5" data-filter="7-A">Class 7-A</button>
+<button class="filter-btn font-accent tracking-wide transition hover:-translate-y-0.5" data-filter="7-B">Class 7-B</button>
+<button class="filter-btn font-accent tracking-wide transition hover:-translate-y-0.5" data-filter="Class 6">Class 6</button>
+<button class="filter-btn font-accent tracking-wide transition hover:-translate-y-0.5" data-filter="Class 4">Class 4</button>
+<button class="filter-btn font-accent tracking-wide transition hover:-translate-y-0.5" data-filter="Faculty">Faculty</button>
+<button class="filter-btn font-accent tracking-wide transition hover:-translate-y-0.5" data-filter="Helios Institute">Helios Institute</button>
     </div>
 
     <div class="character-section">
@@ -432,6 +440,8 @@
 
 <script src="script.js"></script>
 </body>
+
+
 
 
 </html>

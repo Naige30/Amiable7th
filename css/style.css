@@ -1,10 +1,13 @@
+html {
+    background-color: #F0E6FF;
+}
 
 body {
-    background-color: #F0E6FF;
-    font-family: Arial, sans-serif;
+    background-color: transparent;
     margin: 0 auto;
     max-width: 1000px;
     padding: 40px;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -219,7 +222,7 @@ header{
 }
 
 .site-title a{
-    color:#6A4C93;
+    
     font-size: 24px;
     font-weight: bold;
     text-decoration: none;
@@ -652,4 +655,47 @@ background-color: #E8D9FF;
     .price-options {
         justify-content: center;
     }
+}
+
+/* blobs */
+
+.bg-blobs {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.bg-blobs span {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(90px);
+}
+
+.blob-1 {
+    width: 420px;
+    height: 420px;
+    background: #B79FDB;
+    opacity: 0.45;
+    top: -120px;
+    left: -100px;
+}
+
+.blob-2 {
+    width: 360px;
+    height: 360px;
+    background: #E8B86D;
+    opacity: 0.25;
+    top: 280px;
+    right: -140px;
+}
+
+.blob-3 {
+    width: 480px;
+    height: 480px;
+    background: #6A4C93;
+    opacity: 0.3;
+    bottom: -160px;
+    left: 25%;
 }
