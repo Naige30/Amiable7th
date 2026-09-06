@@ -1,25 +1,36 @@
-const filterButtons= document.querySelectorAll('.filter-btn');
-const characterCards=document.querySelectorAll('.character-list li');
+const filterButtons = document.querySelectorAll('.filter-btn');
+const characterCards = document.querySelectorAll('.character-list li');
+const searchInput = document.getElementById('searchInput');
 
-filterButtons.forEach(function(button){
-    button.addEventListener('click',function(){
+let currentFilter = 'all';
 
-        const selectedClass=button.dataset.filter;
+function updateDisplay() {
+    const searchTerm = searchInput.value.toLowerCase();
 
-        filterButtons.forEach(function(btn){
+    characterCards.forEach(function (card) {
+        const matchesFilter = currentFilter === 'all' || card.dataset.class === currentFilter;
+        const name = card.querySelector('span').textContent.toLowerCase();
+        const matchesSearch = name.includes(searchTerm);
+
+        if (matchesFilter && matchesSearch) {
+            card.style.display = 'block';
+        } else {
+            card.style.display = 'none';
+        }
+    });
+}
+
+filterButtons.forEach(function (button) {
+    button.addEventListener('click', function () {
+        currentFilter = button.dataset.filter;
+
+        filterButtons.forEach(function (btn) {
             btn.classList.remove('active');
         });
-
         button.classList.add('active');
 
-        characterCards.forEach(function (card){
-
-            if(selectedClass=='all'||card.dataset.class===selectedClass){
-                card.style.display='block';
-            }
-            else{
-                card.style.display='none';
-            }
-        });
+        updateDisplay();
     });
 });
+
+searchInput.addEventListener('input', updateDisplay);
