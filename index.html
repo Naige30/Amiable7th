@@ -3,13 +3,30 @@
 
 <head>
     <title>Amiable 7th Wiki</title>
+ <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Cinzel:wght@500;600&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    corePlugins: {
+      preflight: false,
+    },
+    theme: {
+      extend: {
+        fontFamily: {
+          title: ['Parisienne', 'cursive'],
+          accent: ['Cinzel', 'serif'],
+        },
+      }
+    }
+  }
+</script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header>
         <div class="site-title">
-            <a href="index.html">Amiable 7th</a>
+            <a href="index.html" class="font-title text-3xl">Amiable 7th</a>
 
         </div>
         <nav>
@@ -21,7 +38,7 @@
     </header>
 
     <div class="welcome-section">
-        <h1>Welcome to Amiable 7th Wiki</h1>
+        <h1 class="font-title text-5xl">Welcome to Amiable 7th Wiki</h1>
         <p>This website contains information about the characters,
             locations, and events of <em>Amiable 7th</em>.</p>
         <p>Explore the world of Amiable 7th and learn more about its characters
@@ -46,7 +63,7 @@
         </div>
     </div>
 
-    <h2 id="characters">Characters</h2>
+    <h2 class="font-accent" id="characters">Characters</h2>
     <p>Below is a list of the characters in Amiable 7th.</p>
 
     <div class="filter-bar">
@@ -61,7 +78,7 @@
     </div>
 
     <div class="character-section">
-        <h3>Main Characters</h3>
+        <h3 class="font-accent">Main Characters</h3>
         <ul class="character-list">
             <li data-class="7-A">
                 <a href="characters/kairos.html" class="character-card">
@@ -99,7 +116,7 @@
     </div>
 
     <div class="character-section">
-        <h3>Main Supporting Characters</h3>
+        <h3 class="font-accent">Main Supporting Characters</h3>
         <ul class="character-list">
             <li data-class="7-A">
                 <a href="characters/cyrus.html" class="character-card">
@@ -152,7 +169,7 @@
         </ul>
     </div>
     <div class="character-section">
-        <h3>Recurring Characters</h3>
+        <h3 class="font-accent">Recurring Characters</h3>
         <ul class="character-list">
             <li data-class="7-A">
                 <a href="characters/ross.html" class="character-card">
@@ -334,12 +351,12 @@
         </ul>
     </div>
 
-    <h2>Characters By Class</h2>
+    <h2 class="font-accent">Characters By Class</h2>
 
    
     <div class="class-grid">
         <div class="class-card">
-            <h4>Class 7-A</h4>
+            <h4 class="font-accent">Class 7-A</h4>
             <div class="chip-list">
                 <span class="chip">Kairos</span>
                 <span class="chip">Heather</span>
@@ -366,7 +383,7 @@
         </div>
 
         <div class="class-card">
-            <h4>Class 7-B</h4>
+            <h4 class="font-accent">Class 7-B</h4>
             <div class="chip-list">
                 <span class="chip">Titus</span>
                 <span class="chip">Cristle</span>
@@ -374,7 +391,7 @@
         </div>
 
         <div class="class-card">
-            <h4>Class 6</h4>
+            <h4 class="font-accent">Class 6</h4>
             <div class="chip-list">
                 <span class="chip">Cath</span>
                 <span class="chip">Max</span>
@@ -383,14 +400,14 @@
         </div>
 
         <div class="class-card">
-            <h4>Class 4</h4>
+            <h4 class="font-accent">Class 4</h4>
             <div class="chip-list">
                 <span class="chip">Allana</span>
             </div>
         </div>
 
         <div class="class-card">
-            <h4>Faculties</h4>
+            <h4 class="font-accent">Faculties</h4>
             <div class="chip-list">
                 <span class="chip">Ms.Jhoffe</span>
                 <span class="chip">Mr.Paul</span>
@@ -399,7 +416,7 @@
         </div>
 
         <div class="class-card">
-            <h4>Helios Institute</h4>
+            <h4 class="font-accent">Helios Institute</h4>
             <div class="chip-list">
                 <span class="chip">Winter</span>
                 <span class="chip">Leslie</span>
