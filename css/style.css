@@ -360,3 +360,26 @@ nav a:hover{
 
 }
 
+/*filter buttons*/
+.filter-bar{
+    display: flex;
+    gap:10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.filter-btn{
+    background-color: white;
+    border: 1px solid #6A4C93;
+    border-radius: 8px;
+    padding: 8px 16px;
+    color: #6A4C93;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.filter-btn.active{
+    background-color: #6A4C93;
+    color: white;
+}
