@@ -311,6 +311,18 @@ nav a:hover{
     margin-top: 0;
 }
 
+.bio-extra {
+    display: none;
+}
+
+#bioToggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-top: 8px;
+}
+
 /* stats strip */
 .stats-strip {
     display: flex;
@@ -698,4 +710,24 @@ background-color: #E8D9FF;
     opacity: 0.3;
     bottom: -160px;
     left: 25%;
+}
+/*scroll*/
+#scrollTopBtn{
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #6A4C93;
+    color: white;
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    z-index: 50;
+}
+#scrollTopBtn:hover{
+    background-color: #3E2B5C;
 }
