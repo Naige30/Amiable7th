@@ -126,6 +126,38 @@
         </p>
     </div>
 
+    <div class="character-section" id="contact">
+        <h2 class="font-accent">Contact Naige</h2>
+        <p class="mb-6">Got a question, feedback on <em>Amiable 7th</em>, or just want to say hi? Send a message below.</p>
+
+        <form id="contactForm" class="contact-form max-w-xl mx-auto grid gap-4 text-left" novalidate>
+            <div class="grid gap-1">
+                <label for="contactName" class="font-accent text-sm text-purple-deep">Name</label>
+                <input type="text" id="contactName" name="name" required
+                    class="rounded-lg border border-purple-light px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-main">
+            </div>
+
+            <div class="grid gap-1">
+                <label for="contactEmail" class="font-accent text-sm text-purple-deep">Email</label>
+                <input type="email" id="contactEmail" name="email" required
+                    class="rounded-lg border border-purple-light px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-main">
+            </div>
+
+            <div class="grid gap-1">
+                <label for="contactMessage" class="font-accent text-sm text-purple-deep">Message</label>
+                <textarea id="contactMessage" name="message" rows="5" required
+                    class="rounded-lg border border-purple-light px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-main"></textarea>
+            </div>
+
+            <button type="submit"
+                class="justify-self-start bg-gradient-to-br from-purple-deep via-purple-main to-purple-light text-white font-accent font-bold px-6 py-2 rounded-lg hover:opacity-90 transition">
+                Send Message
+            </button>
+
+            <p id="contactStatus" class="text-sm mt-2" role="status"></p>
+        </form>
+    </div>
+
   <div class="social-section">
     <h2 class="font-accent">Find Naige</h2>
     <div class="social-links">
@@ -149,6 +181,7 @@
 
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="script.js"></script>
+
 
 </body>
 </html>

@@ -7,13 +7,13 @@
 <body>
     <header>
         <div class="site-title">
-            <a href="index.html">Amiable 7th</a>
+            <a href="index.php">Amiable 7th</a>
         </div>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="index.html#characters">Characters</a>
-            <a href="preorder.html">Pre-order</a>
-            <a href="about.html">About Naige</a>
+            <a href="index.php">Home</a>
+            <a href="index.php#characters">Characters</a>
+            <a href="preorder.php">Pre-order</a>
+            <a href="about.php">About Naige</a>
         </nav>
     </header>
 

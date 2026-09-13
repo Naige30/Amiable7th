@@ -37,14 +37,14 @@
 </div>
     <header class="bg-gradient-to-br from-purple-deep via-purple-main to-purple-light border-none">
         <div class="site-title">
-           <a href="index.html" class="font-title text-3xl text-white font-bold">Amiable 7th</a>
+           <a href="index.php" class="font-title text-3xl text-white font-bold">Amiable 7th</a>
 
         </div>
         <nav>
-<a href="index.html" class="text-white font-bold">Home</a>
+<a href="index.php" class="text-white font-bold">Home</a>
 <a href="#characters" class="text-white font-bold">Characters</a>
-<a href="preorder.html" class="text-white font-bold">Pre-Order</a>
-<a href="about.html" class="text-white font-bold">About Naige</a>
+<a href="preorder.php" class="text-white font-bold">Pre-Order</a>
+<a href="about.php" class="text-white font-bold">About Naige</a>
         </nav>
     </header>
 
@@ -52,7 +52,7 @@
        <h1 class="font-title text-5xl text-white">Welcome to Amiable 7th Wiki</h1>
 <p class="text-purple-light">This website contains information about the characters, locations, and events of <em>Amiable 7th</em>.</p>
 <p class="text-purple-light">Explore the world of Amiable 7th and learn more about its characters and story.</p>
-            <a href="preorder.html" class="font-accent tracking-wide inline-block bg-gradient-to-br from-amber-400 to-amber-600 text-white font-bold px-7 py-3 rounded-lg hover:shadow-lg hover:-translate-y-1 transition">Pre-order the Book</a>
+            <a href="preorder.php" class="font-accent tracking-wide inline-block bg-gradient-to-br from-amber-400 to-amber-600 text-white font-bold px-7 py-3 rounded-lg hover:shadow-lg hover:-translate-y-1 transition">Pre-order the Book</a>
             
     </div>
 
@@ -92,7 +92,7 @@
         <h3 class="font-accent">Main Characters</h3>
         <ul class="character-list">
             <li data-class="7-A">
-                <a href="characters/kairos.html" class="character-card">
+                <a href="characters/kairos.php" class="character-card">
                 <div class="character-image">
                     <img src="images/kairos.jpg" alt="Kairos">
                 </div>
@@ -100,7 +100,7 @@
                 </a>
             </li>
             <li data-class="Helios Institute">
-                <a href="characters/winter.html" class="character-card">
+                <a href="characters/winter.php" class="character-card">
                 <div class="character-image">
                     <img src="images/winter.jpg" alt="Winter">
                 </div>
@@ -108,7 +108,7 @@
                 </a>
             </li>
             <li data-class="7-A">
-                <a href="characters/heather.html" class="character-card">
+                <a href="characters/heather.php" class="character-card">
                 <div class="character-image">
                     <img src="images/heather.jpg" alt="Heather">
                 </div>
@@ -116,7 +116,7 @@
                 </a>
             </li>
             <li data-class="7-B">
-                <a href="characters/titus.html" class="character-card">
+                <a href="characters/titus.php" class="character-card">
                 <div class="character-image">
                     <img src="images/titus.jpg" alt="Titus">
                 </div>
@@ -130,14 +130,14 @@
         <h3 class="font-accent">Main Supporting Characters</h3>
         <ul class="character-list">
             <li data-class="7-A">
-                <a href="characters/cyrus.html" class="character-card">
+                <a href="characters/cyrus.php" class="character-card">
                     <div class="character-image">
                         <img src="images/cyrus.jpg" alt="Cyrus">
                     </div>
                     <span>Cyrus</span>
                 </a>
             </li>
-            <li data-class="7-A"><a href="characters/tyler.html" class="character-card">
+            <li data-class="7-A"><a href="characters/tyler.php" class="character-card">
                 <div class="character-image">
                 <img src="images/tyler.jpg" alt="Tyler">
                 </div>
@@ -145,7 +145,7 @@
             </a>
             </li>
             <li data-class="7-A">
-                <a href="characters/sora.html" class="character-card">
+                <a href="characters/sora.php" class="character-card">
                  <div class="character-image">
                     <img src="images/sora.jpg" alt="Sora">
                  </div>
@@ -153,7 +153,7 @@
                 </a>
                 </li>
             <li data-class="7-A"> 
-                <a href="characters/gilda.html" class="character-card">
+                <a href="characters/gilda.php" class="character-card">
                     <div class="character-image">
                         <img src="images/gilda.jpg" alt="Gilda">
                     </div>
@@ -161,7 +161,7 @@
                 </a>
             </li>
             <li data-class="7-A">
-                <a href="characters/amber.html" class="character-card">
+                <a href="characters/amber.php" class="character-card">
                 <div class="character-image">
                     <img src="images/amber.jpg" alt="Amber">
                 </div>    
@@ -169,7 +169,7 @@
                 </a>
             </li>
             <li data-class="7-A">
-                <a href="characters/patty.html" class="character-card">
+                <a href="characters/patty.php" class="character-card">
                     <div class="character-image">
                         <img src="images/patty.jpg">
                     </div>
@@ -183,7 +183,7 @@
         <h3 class="font-accent">Recurring Characters</h3>
         <ul class="character-list">
             <li data-class="7-A">
-                <a href="characters/ross.html" class="character-card">
+                <a href="characters/ross.php" class="character-card">
                     <div class="character-image">
                      <img src="images/ross.jpg">
                     </div>
@@ -191,7 +191,7 @@
                     </a>
                 </li>
             <li data-class="7-A">
-                <a href="characters/vince.html" class="character-card">
+                <a href="characters/vince.php" class="character-card">
                     <div class="character-image">
                         <img src="images/vince.jpg">
                     </div>
@@ -199,7 +199,7 @@
                     </a>
                 </li>
             <li data-class="7-A">
-                <a href="characters/bastian.html" class="character-card">
+                <a href="characters/bastian.php" class="character-card">
                      <div class="character-image">
                       <img src="images/bastian.jpg">
                      </div>
@@ -207,7 +207,7 @@
                     </a>
                 </li>
             <li data-class="7-A">
-                <a href="characters/kai.html" class="character-card">
+                <a href="characters/kai.php" class="character-card">
                 <div class="character-image">
                     <img src="images/kai.jpg">
                 </div>
@@ -215,7 +215,7 @@
                 </a>
             </li>
             <li data-class="7-A">
-                <a href="characters/zeke.html" class="character-card">
+                <a href="characters/zeke.php" class="character-card">
                     <div class="character-image">
                         <img src="images/zeke.jpg">
                     </div>
@@ -223,7 +223,7 @@
                     </a>
                 </li>
             <li data-class="7-A">
-                <a href="characters/martin.html" class="character-card">
+                <a href="characters/martin.php" class="character-card">
                     <div class="character-image">
                         <img src="images/martin.jpg">
                     </div>
@@ -231,7 +231,7 @@
                 </a>
                 </li>
             <li data-class="7-A">
-                <a href="characters/thalia.html" class="character-card">
+                <a href="characters/thalia.php" class="character-card">
                     <div class="character-image">
                         <img src="images/thalia.jpg">
                     </div>
@@ -239,7 +239,7 @@
                 </a>
                 </li>
             <li data-class="7-A">
-                <a href="characters/jen.html" class="character-card">
+                <a href="characters/jen.php" class="character-card">
                     <div class="character-image">
                         <img src="images/jen.jpg">
                     </div>
@@ -247,7 +247,7 @@
                 </a>
                 </li>
             <li data-class="7-A">
-                <a href="characters/shelly.html" class="character-card">
+                <a href="characters/shelly.php" class="character-card">
                     <div class="character-image">
                         <img src="images/shelly.jpg">
                     </div>
@@ -255,7 +255,7 @@
                 </a>
                 </li>
             <li data-class="7-A">
-                <a href="characters/denzel.html" class="character-card">
+                <a href="characters/denzel.php" class="character-card">
                     <div class="character-image">
                         <img src="images/denzel.jpg">
                     </div>
@@ -263,7 +263,7 @@
                 </a>
                 </li>
             <li data-class="7-A">
-                <a href="characters/elon.html" class="character-card">
+                <a href="characters/elon.php" class="character-card">
                     <div class="character-image">
                         <img src="images/elon.jpg">
                     </div>
@@ -271,7 +271,7 @@
                 </a>
                 </li>
             <li data-class="7-A">
-                <a href="characters/justine.html" class="character-card">
+                <a href="characters/justine.php" class="character-card">
                     <div class="character-image">
                       <img src="images/justine.jpg">
                     </div>
@@ -279,7 +279,7 @@
                 </a>
             </li>
             <li data-class="Class 6">
-                <a href="characters/brian.html" class="character-card">
+                <a href="characters/brian.php" class="character-card">
                     <div class="character-image">
                         <img src="images/brian.jpg">
                     </div>
@@ -287,7 +287,7 @@
                 </a>
             </li>
             <li data-class="Class 6">
-                <a href="characters/max.html" class="character-card">
+                <a href="characters/max.php" class="character-card">
                     <div class="character-image">
                         <img src="images/max.jpg">
                     </div>
@@ -295,7 +295,7 @@
                 </a>
             </li>
             <li data-class="Class 6">
-                <a href="characters/cath.html" class="character-card">
+                <a href="characters/cath.php" class="character-card">
                     <div class="character-image">
                         <img src="images/cath.jpg">
                     </div>
@@ -303,7 +303,7 @@
                 </a>
             </li>
             <li data-class="Class 4">
-                <a href="characters/allana.html" class="character-card">
+                <a href="characters/allana.php" class="character-card">
                     <div class="character-image">
                         <img src="images/allana.jpg">
                     </div>
@@ -311,7 +311,7 @@
                 </a>
             </li>
             <li data-class="Faculty">
-                <a href="characters/jhoffe.html" class="character-card">
+                <a href="characters/jhoffe.php" class="character-card">
                     <div class="character-image">
                         <img src="images/msjhoffe.jpg">
                     </div>
@@ -319,7 +319,7 @@
                 </a>
             </li>
             <li data-class="Faculty">
-                <a href="characters/mrpaul.html" class="character-card">
+                <a href="characters/mrpaul.php" class="character-card">
                     <div class="character-image">
                         <img src="images/mrpaul.jpg">
                     </div>
@@ -327,7 +327,7 @@
                 </a>
             </li>
             <li data-class="Faculty">
-                <a href="characters/msmiriam.html" class="character-card">
+                <a href="characters/msmiriam.php" class="character-card">
                     <div class="character-image">
                         <img src="images/miriam.jpg">
                     </div>
@@ -335,7 +335,7 @@
                 </a>
             </li>
             <li data-class="Helios Institute">
-                <a href="characters/leslie.html" class="character-card">
+                <a href="characters/leslie.php" class="character-card">
                     <div class="character-image">
                         <img src="images/leslie.jpg">
                     </div>
@@ -343,7 +343,7 @@
                 </a>
             </li>
             <li data-class="7-A">
-                <a href="characters/florence.html" class="character-card">
+                <a href="characters/florence.php" class="character-card">
                     <div class="character-image">
                         <img src="images/florence.jpg">
                     </div>
@@ -351,7 +351,7 @@
                 </a>
             </li>
             <li data-class="7-B">
-                <a href="characters/cristle.html" class="character-card">
+                <a href="characters/cristle.php" class="character-card">
                     <div class="character-image">
                         <img src="images/cristle.jpg">
                     </div>
