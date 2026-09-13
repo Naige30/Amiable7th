@@ -23,7 +23,9 @@ $acctCount = $acctResult ? $acctResult->num_rows : 0;
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
-            corePlugins: { preflight: false },
+            corePlugins: {
+                preflight: false,
+            },
             theme: {
                 extend: {
                     fontFamily: {
@@ -47,7 +49,6 @@ $acctCount = $acctResult ? $acctResult->num_rows : 0;
         <div class="site-title">
             <a href="index.php" class="font-title text-3xl text-white font-bold">Amiable 7th</a>
         </div>
-
         <div class="flex items-center gap-6">
             <nav>
                 <a href="index.php" class="text-white font-bold">Home</a>
@@ -72,6 +73,9 @@ $acctCount = $acctResult ? $acctResult->num_rows : 0;
     <div class="flex flex-wrap items-center justify-between gap-3 max-w-4xl mx-auto mb-4 px-2 mt-8">
         <h2 class="font-accent text-xl text-purple-deep font-bold">Contact Messages (<?= $msgCount ?>)</h2>
         <button id="clearAllBtn" class="font-accent text-sm font-bold text-white bg-gradient-to-br from-purple-deep via-purple-main to-purple-light px-4 py-2 rounded-lg hover:shadow-lg hover:-translate-y-0.5 transition">
+            Clear All
+        </button>
+    </div>
             Clear All
         </button>
     </div>
@@ -163,7 +167,29 @@ $acctCount = $acctResult ? $acctResult->num_rows : 0;
             </div>
         </div>
     </div>
+                class="absolute top-2 right-3 text-2xl leading-none text-purple-main hover:text-purple-deep">
+                &times;
+            </button>
 
+            <h2 class="font-title text-3xl text-purple-deep mb-1">Message</h2>
+            <p id="modalDate" class="text-xs text-gray-400 mb-4"></p>
+
+            <div class="grid gap-3 text-left">
+                <div>
+                    <span class="font-accent text-xs font-semibold text-purple-main block">From</span>
+                    <p id="modalName" class="text-sm"></p>
+                </div>
+                <div>
+                    <span class="font-accent text-xs font-semibold text-purple-main block">Email</span>
+                    <p id="modalEmail" class="text-sm"></p>
+                </div>
+                <div>
+                    <span class="font-accent text-xs font-semibold text-purple-main block">Message</span>
+                    <p id="modalMessage" class="text-sm whitespace-pre-wrap"></p>
+                </div>
+            </div>
+        </div>
+    </div>
   
     <div id="editAcctModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-purple-deep/60">
         <div class="relative w-11/12 max-w-lg bg-white rounded-xl p-8">

@@ -173,6 +173,11 @@ session_start();
             document.getElementById('loginModalOverlay').classList.add('flex');
         });
     }
+            e.preventDefault();
+            document.getElementById('loginModalOverlay').classList.remove('hidden');
+            document.getElementById('loginModalOverlay').classList.add('flex');
+        });
+    }
 
     document.getElementById('closeModalBtn').addEventListener('click', function () {
         document.getElementById('loginModalOverlay').classList.add('hidden');

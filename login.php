@@ -69,6 +69,13 @@ $statusMessage = $_GET['status'] ?? '';
                     Log In
                 </button>
             </form>
+                    class="border border-purple-light rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-purple-main/30 focus:border-purple-main">
+
+                <button type="submit"
+                    class="font-accent tracking-wide mt-5 bg-gradient-to-br from-purple-deep via-purple-main to-purple-light text-white font-bold py-3 rounded-lg hover:shadow-lg hover:-translate-y-1 transition">
+                    Log In
+                </button>
+            </form>
 
             <p class="text-sm mt-4">Don't have an account? <a href="signup.php" class="text-purple-main font-bold underline">Sign up</a></p>
         </div>
