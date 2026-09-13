@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html>
 
@@ -40,12 +43,26 @@
            <a href="index.php" class="font-title text-3xl text-white font-bold">Amiable 7th</a>
 
         </div>
-        <nav>
-<a href="index.php" class="text-white font-bold">Home</a>
-<a href="#characters" class="text-white font-bold">Characters</a>
-<a href="preorder.php" class="text-white font-bold">Pre-Order</a>
-<a href="about.php" class="text-white font-bold">About Naige</a>
-        </nav>
+        <div class="flex items-center gap-6">
+    <nav>
+        <a href="index.php" class="text-white font-bold">Home</a>
+        <a href="index.php#characters" class="text-white font-bold">Characters</a>
+        <a href="preorder.php" class="text-white font-bold">Pre-Order</a>
+        <a href="about.php" class="text-white font-bold">About Naige</a>
+        <?php if (isset($_SESSION['account_id']) && $_SESSION['role'] === 'admin'): ?>
+            <a href="admin.php" class="text-white font-bold">Admin</a>
+        <?php endif; ?>
+    </nav>
+
+    <?php if (isset($_SESSION['account_id'])): ?>
+        <div class="flex items-center gap-3 text-white text-sm font-accent font-bold">
+            <span>Hi, <?= htmlspecialchars($_SESSION['username']) ?></span>
+            <a href="logout.php" class="bg-white/20 hover:bg-white/30 px-3 py-1 rounded-lg transition">Log Out</a>
+        </div>
+    <?php else: ?>
+        <a href="login.php" class="text-white font-bold">Log In</a>
+    <?php endif; ?>
+</div>
     </header>
 
     <div class="welcome-section bg-gradient-to-br from-purple-deep via-purple-main to-purple-light border-none">

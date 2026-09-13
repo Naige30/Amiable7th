@@ -731,3 +731,144 @@ background-color: #E8D9FF;
 #scrollTopBtn:hover{
     background-color: #3E2B5C;
 }
+/* ===== Auth pages (signup.php / login.php) ===== */
+.auth-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 40px;
+}
+
+.auth-card {
+    background-color: white;
+    border: 1px solid #6A4C93;
+    border-radius: 10px;
+    padding: 30px;
+    width: 100%;
+    max-width: 380px;
+    text-align: center;
+}
+
+.auth-subtext {
+    color: #555;
+    font-size: 14px;
+    margin-top: -8px;
+    margin-bottom: 20px;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 4px;
+}
+
+.auth-form label {
+    font-size: 13px;
+    font-weight: bold;
+    color: #6A4C93;
+    margin-top: 10px;
+    display: block;
+}
+
+.auth-form input {
+    border: 1px solid #B79FDB;
+    border-radius: 6px;
+    padding: 10px 12px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.auth-form input:focus {
+    outline: none;
+    border-color: #6A4C93;
+    box-shadow: 0 0 0 2px rgba(106, 76, 147, 0.15);
+}
+
+.auth-btn {
+    margin-top: 18px;
+    background-color: #6A4C93;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.auth-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(106, 76, 147, 0.3);
+}
+
+.auth-switch {
+    margin-top: 16px;
+    font-size: 13px;
+}
+
+.auth-status {
+    font-size: 13px;
+    color: #555;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.auth-message {
+    border-radius: 6px;
+    padding: 10px 12px;
+    font-size: 13px;
+    margin-bottom: 14px;
+    text-align: left;
+}
+
+.auth-error {
+    background-color: #FBE4E4;
+    color: #A33A3A;
+    border: 1px solid #E8A9A9;
+}
+
+.auth-success {
+    background-color: #E4F7E9;
+    color: #2E7D4F;
+    border: 1px solid #A9DDBB;
+}
+
+/* nav auth link/logout, sits inline with the other nav links */
+#navAuthArea a {
+    display: inline;
+}
+
+/* ===== Login popup (used on preorder.php) ===== */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(62, 43, 92, 0.55);
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-box {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    width: 90%;
+    max-width: 360px;
+    position: relative;
+    text-align: center;
+}
+
+.modal-close {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    background: none;
+    border: none;
+    font-size: 22px;
+    line-height: 1;
+    color: #6A4C93;
+    cursor: pointer;
+}

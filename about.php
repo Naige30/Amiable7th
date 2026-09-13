@@ -1,3 +1,7 @@
+       <?php
+session_start();
+$statusMessage = $_GET['status'] ?? '';
+?>
 <!DOCTYPE html>
 <html>
 
@@ -38,15 +42,29 @@
 
     <header class="bg-gradient-to-br from-purple-deep via-purple-main to-purple-light border-none">
         <div class="site-title">
-           <a href="index.html" class="font-title text-3xl text-white">Amiable 7th</a>
+           <a href="index.php" class="font-title text-3xl text-white">Amiable 7th</a>
         </div>
 
-        <nav>
-            <a href="index.html" class="text-white font-bold">Home</a>
-            <a href="index.html#characters" class="text-white font-bold">Characters</a>
-            <a href="preorder.html" class="text-white font-bold">Pre-order</a>
-            <a href="about.html" class="text-white font-bold">About Naige</a>
-        </nav>
+        <div class="flex items-center gap-6">
+    <nav>
+        <a href="index.php" class="text-white font-bold">Home</a>
+        <a href="index.php#characters" class="text-white font-bold">Characters</a>
+        <a href="preorder.php" class="text-white font-bold">Pre-Order</a>
+        <a href="about.php" class="text-white font-bold">About Naige</a>
+        <?php if (isset($_SESSION['account_id']) && $_SESSION['role'] === 'admin'): ?>
+            <a href="admin.php" class="text-white font-bold">Admin</a>
+        <?php endif; ?>
+    </nav>
+
+    <?php if (isset($_SESSION['account_id'])): ?>
+        <div class="flex items-center gap-3 text-white text-sm font-accent font-bold">
+            <span>Hi, <?= htmlspecialchars($_SESSION['username']) ?></span>
+            <a href="logout.php" class="bg-white/20 hover:bg-white/30 px-3 py-1 rounded-lg transition">Log Out</a>
+        </div>
+    <?php else: ?>
+        <a href="login.php" class="text-white font-bold">Log In</a>
+    <?php endif; ?>
+</div>
     </header>
 
     <div class="welcome-section bg-gradient-to-br from-purple-deep via-purple-main to-purple-light border-none">
@@ -130,7 +148,7 @@
         <h2 class="font-accent">Contact Naige</h2>
         <p class="mb-6">Got a question, feedback on <em>Amiable 7th</em>, or just want to say hi? Send a message below.</p>
 
-        <form id="contactForm" class="contact-form max-w-xl mx-auto grid gap-4 text-left" novalidate>
+        <form id="contactForm" action="messageprocess.php" method="POST" class="contact-form max-w-xl mx-auto grid gap-4 text-left" novalidate>
             <div class="grid gap-1">
                 <label for="contactName" class="font-accent text-sm text-purple-deep">Name</label>
                 <input type="text" id="contactName" name="name" required
@@ -154,7 +172,7 @@
                 Send Message
             </button>
 
-            <p id="contactStatus" class="text-sm mt-2" role="status"></p>
+                  <p id="contactStatus" class="text-sm mt-2" role="status"><?= htmlspecialchars($statusMessage) ?></p>
         </form>
     </div>
 
