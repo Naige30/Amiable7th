@@ -38,14 +38,15 @@
 
     <header class="bg-gradient-to-br from-purple-deep via-purple-main to-purple-light border-none">
         <div class="site-title">
-           <a href="index.html" class="font-title text-3xl text-white">Amiable 7th</a>
+           <a href="index.php" class="font-title text-3xl text-white">Amiable 7th</a>
         </div>
 
         <nav>
-            <a href="index.html" class="text-white font-bold">Home</a>
-            <a href="index.html#characters" class="text-white font-bold">Characters</a>
-            <a href="preorder.html" class="text-white font-bold">Pre-order</a>
-            <a href="about.html" class="text-white font-bold">About Naige</a>
+            <a href="index.php" class="text-white font-bold">Home</a>
+            <a href="index.php#characters" class="text-white font-bold">Characters</a>
+            <a href="preorder.php" class="text-white font-bold">Pre-Order</a>
+            <a href="about.php" class="text-white font-bold">About Naige</a>
+            <a href="login.php" class="text-white font-bold">Log In</a>
         </nav>
     </header>
 

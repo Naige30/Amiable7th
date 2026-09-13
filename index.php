@@ -41,10 +41,11 @@
 
         </div>
         <nav>
-<a href="index.php" class="text-white font-bold">Home</a>
-<a href="#characters" class="text-white font-bold">Characters</a>
-<a href="preorder.php" class="text-white font-bold">Pre-Order</a>
-<a href="about.php" class="text-white font-bold">About Naige</a>
+            <a href="index.php" class="text-white font-bold">Home</a>
+            <a href="index.php#characters" class="text-white font-bold">Characters</a>
+            <a href="preorder.php" class="text-white font-bold">Pre-Order</a>
+            <a href="about.php" class="text-white font-bold">About Naige</a>
+            <a href="login.php" class="text-white font-bold">Log In</a>
         </nav>
     </header>
 

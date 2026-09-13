@@ -1,19 +1,44 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Pre-order — Amiable 7th</title>
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Cinzel:wght@500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            corePlugins: {
+                preflight: false,
+            },
+            theme: {
+                extend: {
+                    fontFamily: {
+                        title: ['Parisienne', 'cursive'],
+                        accent: ['Cinzel', 'serif'],
+                    },
+                    colors: {
+                        'purple-deep': '#3E2B5C',
+                        'purple-main': '#6A4C93',
+                        'purple-light': '#B79FDB',
+                    },
+                }
+            }
+        }
+    </script>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <header>
+    <header class="bg-gradient-to-br from-purple-deep via-purple-main to-purple-light border-none">
         <div class="site-title">
-            <a href="index.php">Amiable 7th</a>
+            <a href="index.php" class="font-title text-3xl text-white font-bold">Amiable 7th</a>
         </div>
         <nav>
-            <a href="index.php">Home</a>
-            <a href="index.php#characters">Characters</a>
-            <a href="preorder.php">Pre-order</a>
-            <a href="about.php">About Naige</a>
+            <a href="index.php" class="text-white font-bold">Home</a>
+            <a href="index.php#characters" class="text-white font-bold">Characters</a>
+            <a href="preorder.php" class="text-white font-bold">Pre-Order</a>
+            <a href="about.php" class="text-white font-bold">About Naige</a>
+            <a href="login.php" class="text-white font-bold">Log In</a>
         </nav>
     </header>
 
@@ -48,7 +73,7 @@
                 </div>
             </div>
 
-            <a href="#" class="preorder-btn">Pre-order Now</a>
+            <a href="#" id="preorderBtn" class="preorder-btn">Pre-order Now</a>
             <p class="preorder-note">* Link a real order form/store here once ready.</p>
         </div>
     </div>
@@ -84,5 +109,56 @@
         </div>
     </div>
 
+  
+    <div id="loginModalOverlay" class="fixed inset-0 z-50 hidden items-center justify-center bg-purple-deep/60">
+        <div class="relative w-11/12 max-w-sm bg-white rounded-xl p-8 text-center">
+            <button type="button" id="closeModalBtn" aria-label="Close"
+                class="absolute top-2 right-3 text-2xl leading-none text-purple-main hover:text-purple-deep">
+                &times;
+            </button>
+
+            <h2 class="font-title text-3xl text-purple-deep mb-1">Log In to Pre-order</h2>
+            <p class="text-sm text-gray-500 mb-6">Please log in to reserve your copy.</p>
+
+            <form class="flex flex-col text-left gap-1">
+                <label for="modalIdentifier" class="font-accent text-xs font-semibold text-purple-main mt-2">Username or Email</label>
+                <input type="text" id="modalIdentifier" name="identifier"
+                    class="border border-purple-light rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-purple-main/30 focus:border-purple-main">
+
+                <label for="modalPassword" class="font-accent text-xs font-semibold text-purple-main mt-2">Password</label>
+                <input type="password" id="modalPassword" name="password"
+                    class="border border-purple-light rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-purple-main/30 focus:border-purple-main">
+
+                <button type="submit"
+                    class="font-accent tracking-wide mt-5 bg-gradient-to-br from-purple-deep via-purple-main to-purple-light text-white font-bold py-3 rounded-lg hover:shadow-lg hover:-translate-y-1 transition">
+                    Log In
+                </button>
+            </form>
+
+            <p class="text-sm mt-4">Don't have an account? <a href="signup.php" class="text-purple-main font-bold underline">Sign up</a></p>
+        </div>
+    </div>
+
+   
+    <script>
+        document.getElementById('preorderBtn').addEventListener('click', function (e) {
+            e.preventDefault();
+            document.getElementById('loginModalOverlay').classList.remove('hidden');
+            document.getElementById('loginModalOverlay').classList.add('flex');
+        });
+
+        document.getElementById('closeModalBtn').addEventListener('click', function () {
+            document.getElementById('loginModalOverlay').classList.add('hidden');
+            document.getElementById('loginModalOverlay').classList.remove('flex');
+        });
+
+        document.getElementById('loginModalOverlay').addEventListener('click', function (e) {
+            if (e.target === this) {
+                this.classList.add('hidden');
+                this.classList.remove('flex');
+            }
+        });
+    </script>
 </body>
+
 </html>
